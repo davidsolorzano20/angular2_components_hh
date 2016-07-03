@@ -30,7 +30,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        template: "\n  \t<div>\n  \t\t<h3>Buttons</h3>\n  \t</div>\n  \t<div>\n    \t<ButtonComponent></ButtonComponent>\n    </div>\n    ",
+                        template: "\n  \t<div>\n  \t\t<h3>Buttons</h3>\n  \t</div>\n  \t<div class=\"row\">\n    \t<ButtonComponent></ButtonComponent>\n    \t<ButtonComponent text=\"Button Primary\" className=\"btn btn-primary\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Success\" className=\"btn btn-success\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Info\" className=\"btn btn-info\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Warning\" className=\"btn btn-warning\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Danger\" className=\"btn btn-danger\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Link\" className=\"btn btn-link\"></ButtonComponent>    \t\n    </div>\n    ",
                         directives: [ButtonComponent_1.ButtonComponent]
                     }), 
                     __metadata('design:paramtypes', [])

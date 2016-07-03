@@ -1,4 +1,4 @@
-System.register(['angular2/core', '../ButtonBase/ButtonBase'], function(exports_1, context_1) {
+System.register(['angular2/core'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,25 +10,31 @@ System.register(['angular2/core', '../ButtonBase/ButtonBase'], function(exports_
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, ButtonBase_1;
+    var core_1;
     var ButtonComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
-            },
-            function (ButtonBase_1_1) {
-                ButtonBase_1 = ButtonBase_1_1;
             }],
         execute: function() {
             ButtonComponent = (function () {
                 function ButtonComponent() {
+                    this.className = 'btn btn-default';
+                    this.text = 'Button Default';
                 }
+                __decorate([
+                    core_1.Input('className'), 
+                    __metadata('design:type', String)
+                ], ButtonComponent.prototype, "className", void 0);
+                __decorate([
+                    core_1.Input('text'), 
+                    __metadata('design:type', String)
+                ], ButtonComponent.prototype, "text", void 0);
                 ButtonComponent = __decorate([
                     core_1.Component({
                         selector: 'ButtonComponent',
-                        template: "\n  \t<ButtonBase></ButtonBase>\n  ",
-                        directives: [ButtonBase_1.ButtonBase]
+                        template: "\n    <button type=\"button\" class=\"{{className}}\">\n      {{text}}\n    </button>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ButtonComponent);

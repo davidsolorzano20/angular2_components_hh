@@ -8,8 +8,14 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
   	<div>
   		<h3>Buttons</h3>
   	</div>
-  	<div>
+  	<div class="row">
     	<ButtonComponent></ButtonComponent>
+    	<ButtonComponent text="Button Primary" className="btn btn-primary"></ButtonComponent>
+    	<ButtonComponent text="Button Success" className="btn btn-success"></ButtonComponent>
+    	<ButtonComponent text="Button Info" className="btn btn-info"></ButtonComponent>
+    	<ButtonComponent text="Button Warning" className="btn btn-warning"></ButtonComponent>
+    	<ButtonComponent text="Button Danger" className="btn btn-danger"></ButtonComponent>
+    	<ButtonComponent text="Button Link" className="btn btn-link"></ButtonComponent>    	
     </div>
     `,
   directives: [ButtonComponent]

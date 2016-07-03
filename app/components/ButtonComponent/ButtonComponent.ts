@@ -1,12 +1,16 @@
-import {Component} from 'angular2/core';
-import {ButtonBase} from '../ButtonBase/ButtonBase';
+import {Component, Input} from 'angular2/core';
 
 @Component({
-  selector: 'ButtonComponent'
+  selector: 'ButtonComponent',
   template: `
-  	<ButtonBase></ButtonBase>
-  `,
-  directives: [ButtonBase]
+    <button type="button" class="{{className}}">
+      {{text}}
+    </button>
+  `
 })
 
-export class ButtonComponent {}
+export class ButtonComponent {
+
+	@Input('className') className: string = 'btn btn-default';
+	@Input('text') text: string = 'Button Default';
+}
