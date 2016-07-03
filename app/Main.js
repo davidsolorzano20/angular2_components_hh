@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'app/components/button/ButtonBase'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'app/components/ButtonComponent/ButtonComponent'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/b
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, ButtonBase_1;
+    var core_1, browser_1, ButtonComponent_1;
     var Main;
     return {
         setters:[
@@ -20,8 +20,8 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/b
             function (browser_1_1) {
                 browser_1 = browser_1_1;
             },
-            function (ButtonBase_1_1) {
-                ButtonBase_1 = ButtonBase_1_1;
+            function (ButtonComponent_1_1) {
+                ButtonComponent_1 = ButtonComponent_1_1;
             }],
         execute: function() {
             Main = (function () {
@@ -30,8 +30,8 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/b
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        template: "\n    <ButtonBase></ButtonBase>\n    ",
-                        directives: [ButtonBase_1.ButtonBase]
+                        template: "\n  \t<div>\n  \t\t<h3>Buttons</h3>\n  \t</div>\n  \t<div class=\"row\">\n    \t<ButtonComponent></ButtonComponent>\n    \t<ButtonComponent text=\"Button Primary\" className=\"btn btn-primary\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Success\" className=\"btn btn-success\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Info\" className=\"btn btn-info\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Warning\" className=\"btn btn-warning\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Danger\" className=\"btn btn-danger\"></ButtonComponent>\n    \t<ButtonComponent text=\"Button Link\" className=\"btn btn-link\"></ButtonComponent>    \t\n    </div>\n    ",
+                        directives: [ButtonComponent_1.ButtonComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Main);
