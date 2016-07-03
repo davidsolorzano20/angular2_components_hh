@@ -24,7 +24,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 ButtonBase = __decorate([
                     core_1.Component({
                         selector: 'ButtonBase',
-                        template: "\n    <button>\n      Button\n    </button>\n  "
+                        template: "\n    <button type=\"button\" class=\"btn btn-primary\">\n      Button\n    </button>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ButtonBase);
