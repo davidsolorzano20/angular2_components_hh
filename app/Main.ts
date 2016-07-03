@@ -1,13 +1,18 @@
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-import {ButtonBase} from 'app/components/button/ButtonBase';
+import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
 
 @Component({
   selector: 'Main',
   template:`
-    <ButtonBase></ButtonBase>
+  	<div>
+  		<h3>Buttons</h3>
+  	</div>
+  	<div>
+    	<ButtonComponent></ButtonComponent>
+    </div>
     `,
-  directives: [ButtonBase]
+  directives: [ButtonComponent]
 })
 
 export class Main {}
