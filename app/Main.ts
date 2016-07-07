@@ -77,9 +77,14 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
             <br>       
             <ButtonComponent text="Button Link EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-link"></ButtonComponent>            
           </div>   
-      </div>      
+      </div>    
     </div>
-
+    <div class="col-md-12">
+      <br>
+      <div class="col-md-12" style="background: #000000;">
+      </div>      
+      <br>    
+    </div>
     <div class="col-md-12">
       <div class="col-md-6">
         <h3>Event MouseOut Button</h3>
@@ -128,7 +133,14 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
           <br>
           <ButtonComponent text="Button Link EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-link"></ButtonComponent>        
         </div>
-      </div>
+      </div>      
+    </div>
+
+    <div class="col-md-12">
+      <br>
+      <div class="col-md-12" style="background: #000000;">
+      </div> 
+      <br>    
     </div>
 
     <div class="col-md-12">
