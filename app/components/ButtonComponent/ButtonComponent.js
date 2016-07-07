@@ -23,9 +23,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.className = 'btn btn-default';
                     this.text = 'Button Default';
                     this.actionClick = new core_1.EventEmitter();
+                    this.actionMouseOver = new core_1.EventEmitter();
                 }
                 ButtonComponent.prototype.doClick = function () {
                     this.actionClick.emit({ sender: this });
+                };
+                ButtonComponent.prototype.doMouseOver = function () {
+                    this.actionMouseOver.emit({ sender: this });
                 };
                 __decorate([
                     core_1.Input('className'), 
@@ -39,10 +43,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Output(), 
                     __metadata('design:type', Object)
                 ], ButtonComponent.prototype, "actionClick", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], ButtonComponent.prototype, "actionMouseOver", void 0);
                 ButtonComponent = __decorate([
                     core_1.Component({
                         selector: 'ButtonComponent',
-                        template: "\n    <button type=\"button\" class=\"{{className}}\" (click)=\"doClick()\">\n      {{text}}\n    </button>\n  "
+                        template: "\n    <button type=\"button\" class=\"{{className}}\" (click)=\"doClick()\" (mouseover)=\"doMouseOver()\">\n      {{text}}\n    </button>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ButtonComponent);
