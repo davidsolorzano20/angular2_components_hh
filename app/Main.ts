@@ -9,7 +9,7 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
   		<h3>Buttons</h3>
   	</div>
   	<div class="row">
-    	<ButtonComponent></ButtonComponent>
+    	<ButtonComponent text="Button Default"></ButtonComponent>
     	<ButtonComponent text="Button Primary" className="btn btn-primary"></ButtonComponent>
     	<ButtonComponent text="Button Success" className="btn btn-success"></ButtonComponent>
     	<ButtonComponent text="Button Info" className="btn btn-info"></ButtonComponent>
@@ -17,10 +17,27 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
     	<ButtonComponent text="Button Danger" className="btn btn-danger"></ButtonComponent>
     	<ButtonComponent text="Button Link" className="btn btn-link"></ButtonComponent>    	
     </div>
+    <div>
+      <h3>Event Click Button</h3>
+    </div>
+    <div class="row">
+      <ButtonComponent text="Button Default" (actionClick)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary" (actionClick)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success" (actionClick)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info" (actionClick)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning" (actionClick)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger" (actionClick)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link" (actionClick)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+    </div>    
     `,
   directives: [ButtonComponent]
 })
 
-export class Main {}
+export class Main {
+
+  private showTextButton($event): void {
+    alert($event.sender.text);
+  }
+}
 
 bootstrap(Main)
