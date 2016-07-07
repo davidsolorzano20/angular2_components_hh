@@ -21,26 +21,38 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
       <h3>Event Click Button</h3>
     </div>
     <div class="row">
-      <ButtonComponent text="Button Default" (actionClick)="showTextButton($event)"></ButtonComponent>
-      <ButtonComponent text="Button Primary" (actionClick)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
-      <ButtonComponent text="Button Success" (actionClick)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
-      <ButtonComponent text="Button Info" (actionClick)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
-      <ButtonComponent text="Button Warning" (actionClick)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
-      <ButtonComponent text="Button Danger" (actionClick)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
-      <ButtonComponent text="Button Link" (actionClick)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+      <ButtonComponent text="Button Default EventClick" (actionClick)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary EventClick" (actionClick)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success EventClick" (actionClick)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info EventClick" (actionClick)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning EventClick" (actionClick)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger EventClick" (actionClick)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link EventClick" (actionClick)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
     </div>
     <div>
       <h3>Event MouseOver Button</h3>
     </div>
     <div class="row">
-      <ButtonComponent text="Button Default" (actionMouseOver)="showTextButton($event)"></ButtonComponent>
-      <ButtonComponent text="Button Primary" (actionMouseOver)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
-      <ButtonComponent text="Button Success" (actionMouseOver)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
-      <ButtonComponent text="Button Info" (actionMouseOver)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
-      <ButtonComponent text="Button Warning" (actionMouseOver)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
-      <ButtonComponent text="Button Danger" (actionMouseOver)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
-      <ButtonComponent text="Button Link" (actionMouseOver)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+      <ButtonComponent text="Button Default EventMouseOver" (actionMouseOver)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link EventMouseOver" (actionMouseOver)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
     </div>
+    <div>
+      <h3>Event MouseOut Button</h3>
+    </div>
+    <div class="row">
+      <ButtonComponent text="Button Default EventMouseOut" (actionMouseOut)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+    </div>    
     `,
   directives: [ButtonComponent]
 })
