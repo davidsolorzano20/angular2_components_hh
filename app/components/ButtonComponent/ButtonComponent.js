@@ -25,6 +25,8 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.actionClick = new core_1.EventEmitter();
                     this.actionMouseOver = new core_1.EventEmitter();
                     this.actionMouseOut = new core_1.EventEmitter();
+                    this.actionMouseDown = new core_1.EventEmitter();
+                    this.actionMouseUp = new core_1.EventEmitter();
                 }
                 ButtonComponent.prototype.doClick = function () {
                     this.actionClick.emit({ sender: this });
@@ -34,6 +36,12 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 };
                 ButtonComponent.prototype.doMouseOut = function () {
                     this.actionMouseOut.emit({ sender: this });
+                };
+                ButtonComponent.prototype.doMouseDown = function () {
+                    this.actionMouseDown.emit({ sender: this });
+                };
+                ButtonComponent.prototype.doMouseUp = function () {
+                    this.actionMouseUp.emit({ sender: this });
                 };
                 __decorate([
                     core_1.Input('className'), 
@@ -55,10 +63,18 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Output(), 
                     __metadata('design:type', Object)
                 ], ButtonComponent.prototype, "actionMouseOut", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], ButtonComponent.prototype, "actionMouseDown", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], ButtonComponent.prototype, "actionMouseUp", void 0);
                 ButtonComponent = __decorate([
                     core_1.Component({
                         selector: 'ButtonComponent',
-                        template: "\n    <button type=\"button\" class=\"{{className}}\" (click)=\"doClick()\" (mouseover)=\"doMouseOver()\" (mouseout)=\"doMouseOut()\">\n      {{text}}\n    </button>\n  "
+                        template: "\n    <button type=\"button\" class=\"{{className}}\" (click)=\"doClick()\" (mouseover)=\"doMouseOver()\" (mouseout)=\"doMouseOut()\" (mousedown)=\"doMouseDown()\" (mouseup)=\"doMouseUp()\">\n      {{text}}\n    </button>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], ButtonComponent);

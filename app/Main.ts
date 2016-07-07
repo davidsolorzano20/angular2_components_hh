@@ -53,6 +53,30 @@ import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
       <ButtonComponent text="Button Danger EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
       <ButtonComponent text="Button Link EventMouseOut" (actionMouseOut)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
     </div>    
+    <div>
+      <h3>Event MouseDown Button</h3>
+    </div>
+    <div class="row">
+      <ButtonComponent text="Button Default EventMouseDown" (actionMouseDown)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link EventMouseDown" (actionMouseDown)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+    </div>
+    <div>
+      <h3>Event MouseUp Button</h3>
+    </div>
+    <div class="row">
+      <ButtonComponent text="Button Default EventMouseUp" (actionMouseUp)="showTextButton($event)"></ButtonComponent>
+      <ButtonComponent text="Button Primary EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-primary"></ButtonComponent>
+      <ButtonComponent text="Button Success EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-success"></ButtonComponent>
+      <ButtonComponent text="Button Info EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-info"></ButtonComponent>
+      <ButtonComponent text="Button Warning EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-warning"></ButtonComponent>
+      <ButtonComponent text="Button Danger EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-danger"></ButtonComponent>
+      <ButtonComponent text="Button Link EventMouseUp" (actionMouseUp)="showTextButton($event)" className="btn btn-link"></ButtonComponent>     
+    </div>
     `,
   directives: [ButtonComponent]
 })
