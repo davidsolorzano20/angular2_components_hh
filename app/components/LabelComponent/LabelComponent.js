@@ -20,11 +20,61 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         execute: function() {
             LabelComponent = (function () {
                 function LabelComponent() {
+                    this.className = "label label-default";
+                    this.text = "Default Label";
+                    this.actionClick = new core_1.EventEmitter();
+                    this.actionMouseDown = new core_1.EventEmitter();
+                    this.actionMouseUp = new core_1.EventEmitter();
+                    this.actionMouseOver = new core_1.EventEmitter();
+                    this.actionMouseOut = new core_1.EventEmitter();
                 }
+                LabelComponent.prototype.doClick = function () {
+                    this.actionClick.emit({ sender: this });
+                };
+                LabelComponent.prototype.doMouseDown = function () {
+                    this.actionMouseDown.emit({ sender: this });
+                };
+                LabelComponent.prototype.doMouseUp = function () {
+                    this.actionMouseUp.emit({ sender: this });
+                };
+                LabelComponent.prototype.doMouseOver = function () {
+                    this.actionMouseOver.emit({ sender: this });
+                };
+                LabelComponent.prototype.doMouseOut = function () {
+                    this.actionMouseOut.emit({ sender: this });
+                };
+                __decorate([
+                    core_1.Input('className'), 
+                    __metadata('design:type', String)
+                ], LabelComponent.prototype, "className", void 0);
+                __decorate([
+                    core_1.Input('text'), 
+                    __metadata('design:type', String)
+                ], LabelComponent.prototype, "text", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], LabelComponent.prototype, "actionClick", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], LabelComponent.prototype, "actionMouseDown", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], LabelComponent.prototype, "actionMouseUp", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], LabelComponent.prototype, "actionMouseOver", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], LabelComponent.prototype, "actionMouseOut", void 0);
                 LabelComponent = __decorate([
                     core_1.Component({
                         selector: 'LabelComponent',
-                        template: "<label>Hi, I am label</label>"
+                        template: "<label class=\"{{className}}\" (click)=\"doClick()\" (mousedown)=\"doMouseDown()\" (mouseup)=\"doMouseUp()\" (mouseover)=\"doMouseOver()\" (mouseout)=\"doMouseOut()\">{{ text }}</label>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], LabelComponent);

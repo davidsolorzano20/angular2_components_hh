@@ -6,16 +6,19 @@ import {LabelComponent} from 'app/components/LabelComponent/LabelComponent';
 @Component({
   selector: 'Main',
   //templateUrl:`app/components/views/button.html`,
-  template: `<LabelComponent></LabelComponent>`,
+  templateUrl: `app/components/views/label.html`,
   directives: [ButtonComponent, LabelComponent]
 })
 
 export class Main {
 
-  private showTextButton($event): void {
+  public showTextButton($event): void {
     alert($event.sender.text);
   }
 
+  public showTextLabel($event): void {
+  	alert($event.sender.text);
+  }
 }
 
 bootstrap(Main)

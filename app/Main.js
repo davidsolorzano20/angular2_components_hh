@@ -33,11 +33,14 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
                 Main.prototype.showTextButton = function ($event) {
                     alert($event.sender.text);
                 };
+                Main.prototype.showTextLabel = function ($event) {
+                    alert($event.sender.text);
+                };
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
                         //templateUrl:`app/components/views/button.html`,
-                        template: "<LabelComponent></LabelComponent>",
+                        templateUrl: "app/components/views/label.html",
                         directives: [ButtonComponent_1.ButtonComponent, LabelComponent_1.LabelComponent]
                     }), 
                     __metadata('design:paramtypes', [])

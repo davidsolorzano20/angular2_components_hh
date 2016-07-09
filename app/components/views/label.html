@@ -1,0 +1,160 @@
+<div class="col-md-12">
+	<br>
+	<br>
+	<div class="col-md-12">
+		<div class="col-md-4">
+			<div class="col-md-12 well">
+				<label>Single Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary" className="label label-primary"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success" className="label label-success"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info" className="label label-info"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning" className="label label-warning"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger" className="label label-danger"></LabelComponent>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-4">
+			<div class="col-md-12 well">
+				<label>Event Click Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent text="Label Default EventClick" (actionClick)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary EventClick" className="label label-primary" (actionClick)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success EventClick" className="label label-success" (actionClick)="showTextLabel($event)"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info EventClick" className="label label-info" (actionClick)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning EventClick" className="label label-warning" (actionClick)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger EventClick" className="label label-danger" (actionClick)="showTextLabel($event)"></LabelComponent>
+				</div>
+			</div>		
+		</div>
+	</div>
+	<div class="col-md-12">
+		<div class="col-md-5">
+			<div class="col-md-12 well">
+				<label>Event MouseDown Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent text="Label Default EventMouseDown" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary EventMouseDown" className="label label-primary" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success EventMouseDown" className="label label-success" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info EventMouseDown" className="label label-info" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning EventMouseDown" className="label label-warning" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger EventMouseDown" className="label label-danger" (actionMouseDown)="showTextLabel($event)"></LabelComponent>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="col-md-12 well">
+				<label>Event MouseUp Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent text="Label Default EventMouseUp" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary EventMouseUp" className="label label-primary" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success EventMouseUp" className="label label-success" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info EventMouseUp" className="label label-info" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning EventMouseUp" className="label label-warning" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger EventMouseUp" className="label label-danger" (actionMouseUp)="showTextLabel($event)"></LabelComponent>
+				</div>
+			</div>		
+		</div>
+	</div>	
+	<div class="col-md-12">	
+		<div class="col-md-5">
+			<div class="col-md-12 well">
+				<label>Event MouseOver Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent text="Label Default EventMouseOver" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary EventMouseOver" className="label label-primary" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success EventMouseOver" className="label label-success" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info EventMouseOver" className="label label-info" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning EventMouseOver" className="label label-warning" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger EventMouseOver" className="label label-danger" (actionMouseOver)="showTextLabel($event)"></LabelComponent>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-5">
+			<div class="col-md-12 well">
+				<label>Event MouseOut Label</label>
+				<br>
+				<br>
+				<div class="col-md-6">
+					<LabelComponent text="Label Default EventMouseOut" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Primary EventMouseOut" className="label label-primary" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Success EventMouseOut" className="label label-success" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+				</div>
+				<div class="col-md-6">
+					<LabelComponent text="Label Info EventMouseOut" className="label label-info" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Warning EventMouseOut" className="label label-warning" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+					<br>
+					<br>
+					<LabelComponent text="Label Danger EventMouseOut" className="label label-danger" (actionMouseOut)="showTextLabel($event)"></LabelComponent>
+				</div>
+			</div>		
+		</div>
+	</div>	
+</div>
