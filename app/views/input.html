@@ -1,22 +1,24 @@
 <div class="col-md-12">
 	<br>
 	<br>
+	<label>Single Input</label>
+	<br>
 	<div class="col-md-12">
 		<div class="col-md-3">
 			<div class="col-md-12 well">
-				<label>Single input, inputType = "text"</label>
+				<label>inputType = "text"</label>
 				<InputComponent inputType="text" className="form-control"></InputComponent>	
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="col-md-12 well">
-				<label>Single input, inputType = "password"</label>
+				<label>inputType = "password"</label>
 				<InputComponent inputType="password" className="form-control"></InputComponent>
 			</div>
 		</div>
 		<div class="col-md-3">
 			<div class="col-md-12 well">
-				<label> Single input, inputType = "number"</label>
+				<label>inputType = "number"</label>
 				<InputComponent inputType="number" className="form-control"></InputComponent>
 			</div>
 		</div>
@@ -26,17 +28,35 @@
 	<div class="col-md-12">
 		<div class="col-md-3">
 			<div class="col-md-12 well">
-				<label>Singel input, inputType = "checkbox"</label>
+				<label>inputType = "checkbox"</label>
 				<div class="checkbox">
-					<label><input type="checkbox" value="">Option 1</label>
+					<label><InputComponent inputType="checkbox" value=""></InputComponent>Option 1</label>
 				</div>
 				<div class="checkbox">
-  					<label><input type="checkbox" value="">Option 2</label>
+  					<label><InputComponent inputType="checkbox" value=""></InputComponent>Option 2</label>
 				</div>
 				<div class="checkbox disabled">
-  					<label><input type="checkbox" value="">Option 3</label>
+  					<label><InputComponent inputType="checkbox" value=""></InputComponent>Option 3</label>
 				</div>
 			</div>
 		</div>
+		<div class="col-md-3">
+			<div class="col-md-12 well">
+				<label>inputType = "radio"</label>
+				<div class="radio">
+				  <label><InputComponent inputType="radio" name="optradio"></InputComponent>Option 1</label>
+				</div>
+				<div class="radio">
+				  <label><InputComponent inputType="radio" name="optradio"></InputComponent>Option 2</label>
+				</div>
+				<div class="radio disabled">
+				  <label><InputComponent inputType="radio" name="optradio"></InputComponent>Option 3</label>
+				</div>				
+			</div>
+		</div>
 	</div>
+	<br>
+	<div class="col-md-12" style="background: #000000;">
+	</div> 
+	<br>	
 </div>

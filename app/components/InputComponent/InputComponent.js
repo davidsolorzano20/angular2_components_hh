@@ -23,6 +23,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.inputType = "";
                     this.className = "";
                     this.value = "";
+                    this.name = "";
                 }
                 __decorate([
                     core_1.Input('inputType'), 
@@ -36,10 +37,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Input('value'), 
                     __metadata('design:type', String)
                 ], InputComponent.prototype, "value", void 0);
+                __decorate([
+                    core_1.Input('name'), 
+                    __metadata('design:type', String)
+                ], InputComponent.prototype, "name", void 0);
                 InputComponent = __decorate([
                     core_1.Component({
                         selector: 'InputComponent',
-                        template: "<input type=\"{{inputType}}\" class=\"{{className}}\" value=\"{{value}}\"/>"
+                        template: "<input type=\"{{inputType}}\" class=\"{{className}}\" value=\"{{value}}\" name=\"{{name}}\"/>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], InputComponent);

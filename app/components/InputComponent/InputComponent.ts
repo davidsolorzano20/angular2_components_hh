@@ -2,7 +2,7 @@ import {Component, Input} from 'angular2/core';
 
 @Component({
 	selector: 'InputComponent',
-	template: `<input type="{{inputType}}" class="{{className}}" value="{{value}}"/>`
+	template: `<input type="{{inputType}}" class="{{className}}" value="{{value}}" name="{{name}}"/>`
 })
 
 export class InputComponent {
@@ -10,5 +10,6 @@ export class InputComponent {
 	@Input('inputType') inputType: string = "";
 	@Input('className') className: string = "";
 	@Input('value') value: string = "";
+	@Input('name') name: string = "";
 	
 }
