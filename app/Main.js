@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'app/components/ButtonComponent/ButtonComponent', 'app/components/LabelComponent/LabelComponent'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'app/components/ButtonComponent/ButtonComponent', 'app/components/LabelComponent/LabelComponent', 'app/components/InputComponent/InputComponent'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, ButtonComponent_1, LabelComponent_1;
+    var core_1, browser_1, ButtonComponent_1, LabelComponent_1, InputComponent_1;
     var Main;
     return {
         setters:[
@@ -25,6 +25,9 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
             },
             function (LabelComponent_1_1) {
                 LabelComponent_1 = LabelComponent_1_1;
+            },
+            function (InputComponent_1_1) {
+                InputComponent_1 = InputComponent_1_1;
             }],
         execute: function() {
             Main = (function () {
@@ -40,8 +43,9 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
                     core_1.Component({
                         selector: 'Main',
                         //templateUrl:`app/views/button.html`,
-                        templateUrl: "app/views/label.html",
-                        directives: [ButtonComponent_1.ButtonComponent, LabelComponent_1.LabelComponent]
+                        //templateUrl: `app/views/label.html`,
+                        templateUrl: "app/views/input.html",
+                        directives: [ButtonComponent_1.ButtonComponent, LabelComponent_1.LabelComponent, InputComponent_1.InputComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Main);
