@@ -39,8 +39,8 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        //templateUrl:`app/components/views/button.html`,
-                        templateUrl: "app/components/views/label.html",
+                        //templateUrl:`app/views/button.html`,
+                        templateUrl: "app/views/label.html",
                         directives: [ButtonComponent_1.ButtonComponent, LabelComponent_1.LabelComponent]
                     }), 
                     __metadata('design:paramtypes', [])

@@ -5,8 +5,8 @@ import {LabelComponent} from 'app/components/LabelComponent/LabelComponent';
 
 @Component({
   selector: 'Main',
-  //templateUrl:`app/components/views/button.html`,
-  templateUrl: `app/components/views/label.html`,
+  //templateUrl:`app/views/button.html`,
+  templateUrl: `app/views/label.html`,
   directives: [ButtonComponent, LabelComponent]
 })
 
