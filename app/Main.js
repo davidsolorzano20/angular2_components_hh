@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'app/components/ButtonComponent/button.component', 'app/components/LabelComponent/label.component', 'app/components/InputComponent/input.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_components/button_single_page_component/button.single.page.component', 'app/single_page_components/label_single_page_component/label.single.page.component', 'app/single_page_components/input_single_page_component/input.single.page.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, button_component_1, label_component_1, input_component_1;
+    var core_1, browser_1, button_single_page_component_1, label_single_page_component_1, input_single_page_component_1;
     var Main;
     return {
         setters:[
@@ -20,32 +20,24 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/B
             function (browser_1_1) {
                 browser_1 = browser_1_1;
             },
-            function (button_component_1_1) {
-                button_component_1 = button_component_1_1;
+            function (button_single_page_component_1_1) {
+                button_single_page_component_1 = button_single_page_component_1_1;
             },
-            function (label_component_1_1) {
-                label_component_1 = label_component_1_1;
+            function (label_single_page_component_1_1) {
+                label_single_page_component_1 = label_single_page_component_1_1;
             },
-            function (input_component_1_1) {
-                input_component_1 = input_component_1_1;
+            function (input_single_page_component_1_1) {
+                input_single_page_component_1 = input_single_page_component_1_1;
             }],
         execute: function() {
             Main = (function () {
                 function Main() {
                 }
-                Main.prototype.showTextButton = function ($event) {
-                    alert($event.sender.text);
-                };
-                Main.prototype.showTextLabel = function ($event) {
-                    alert($event.sender.text);
-                };
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        //templateUrl:`app/views/button.html`,
-                        //templateUrl: `app/views/label.html`,
-                        templateUrl: "app/views/input.html",
-                        directives: [button_component_1.ButtonComponent, label_component_1.LabelComponent, input_component_1.InputComponent]
+                        template: "\n        <ButtonSinglePageComponent></ButtonSinglePageComponent>\n        <LabelSinglePageComponent></LabelSinglePageComponent>\n        <InputSinglePageComponent></InputSinglePageComponent>\n  ",
+                        directives: [button_single_page_component_1.ButtonSinglePageComponent, label_single_page_component_1.LabelSinglePageComponent, input_single_page_component_1.InputSinglePageComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Main);

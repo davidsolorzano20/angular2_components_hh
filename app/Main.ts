@@ -1,26 +1,21 @@
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-import {ButtonComponent} from 'app/components/ButtonComponent/button.component';
-import {LabelComponent} from 'app/components/LabelComponent/label.component';
-import {InputComponent} from 'app/components/InputComponent/input.component';
+import {ButtonSinglePageComponent} from 'app/single_page_components/button_single_page_component/button.single.page.component';
+import {LabelSinglePageComponent} from 'app/single_page_components/label_single_page_component/label.single.page.component';
+import {InputSinglePageComponent} from 'app/single_page_components/input_single_page_component/input.single.page.component';
 
 @Component({
   selector: 'Main',
-  //templateUrl:`app/views/button.html`,
-  //templateUrl: `app/views/label.html`,
-  templateUrl:`app/views/input.html`,
-  directives: [ButtonComponent, LabelComponent, InputComponent]
+  template: `
+        <ButtonSinglePageComponent></ButtonSinglePageComponent>
+        <LabelSinglePageComponent></LabelSinglePageComponent>
+        <InputSinglePageComponent></InputSinglePageComponent>
+  `,
+  directives: [ButtonSinglePageComponent,LabelSinglePageComponent,InputSinglePageComponent]
 })
 
 export class Main {
 
-  public showTextButton($event): void {
-    alert($event.sender.text);
-  }
-
-  public showTextLabel($event): void {
-  	alert($event.sender.text);
-  }
 }
 
 bootstrap(Main)
