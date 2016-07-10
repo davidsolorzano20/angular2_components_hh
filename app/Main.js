@@ -36,7 +36,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        template: "\n        <ButtonSinglePageComponent></ButtonSinglePageComponent>\n        <LabelSinglePageComponent></LabelSinglePageComponent>\n        <InputSinglePageComponent></InputSinglePageComponent>\n  ",
+                        template: "\n        <div class=\"col-md-12\">\n          <h2>BUTTON</h2>\n        </div>\n        <ButtonSinglePageComponent></ButtonSinglePageComponent>\n        <div class=\"col-md-12\">\n          <h2>LABEL</h2>\n        </div>\n        <LabelSinglePageComponent></LabelSinglePageComponent>\n        <div class=\"col-md-12\">\n          <h2>INPUT</h2>\n        </div>\n        <InputSinglePageComponent></InputSinglePageComponent>\n  ",
                         directives: [button_single_page_component_1.ButtonSinglePageComponent, label_single_page_component_1.LabelSinglePageComponent, input_single_page_component_1.InputSinglePageComponent]
                     }), 
                     __metadata('design:paramtypes', [])

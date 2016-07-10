@@ -7,8 +7,17 @@ import {InputSinglePageComponent} from 'app/single_page_components/input_single_
 @Component({
   selector: 'Main',
   template: `
+        <div class="col-md-12">
+          <h2>BUTTON</h2>
+        </div>
         <ButtonSinglePageComponent></ButtonSinglePageComponent>
+        <div class="col-md-12">
+          <h2>LABEL</h2>
+        </div>
         <LabelSinglePageComponent></LabelSinglePageComponent>
+        <div class="col-md-12">
+          <h2>INPUT</h2>
+        </div>
         <InputSinglePageComponent></InputSinglePageComponent>
   `,
   directives: [ButtonSinglePageComponent,LabelSinglePageComponent,InputSinglePageComponent]
