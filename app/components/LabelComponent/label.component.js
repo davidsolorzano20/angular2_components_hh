@@ -84,4 +84,4 @@ System.register(['angular2/core'], function(exports_1, context_1) {
         }
     }
 });
-//# sourceMappingURL=LabelComponent.js.map
+//# sourceMappingURL=label.component.js.map

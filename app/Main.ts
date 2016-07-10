@@ -1,8 +1,8 @@
 import {Component} from 'angular2/core';
 import {bootstrap} from 'angular2/platform/browser';
-import {ButtonComponent} from 'app/components/ButtonComponent/ButtonComponent';
-import {LabelComponent} from 'app/components/LabelComponent/LabelComponent';
-import {InputComponent} from 'app/components/InputComponent/InputComponent';
+import {ButtonComponent} from 'app/components/ButtonComponent/button.component';
+import {LabelComponent} from 'app/components/LabelComponent/label.component';
+import {InputComponent} from 'app/components/InputComponent/input.component';
 
 @Component({
   selector: 'Main',

@@ -1,0 +1,1 @@
+//# sourceMappingURL=label.single.page.component.js.map
