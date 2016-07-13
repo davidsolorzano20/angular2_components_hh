@@ -13,5 +13,6 @@ export class ButtonSinglePageComponent {
 	public showTextButton($event): void {
 		alert($event.sender.text);
 	}
-
 }
+
+bootstrap(ButtonSinglePageComponent)

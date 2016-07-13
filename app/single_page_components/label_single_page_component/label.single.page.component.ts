@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {bootstrap} from 'angular2/platform/browser';
 import {LabelComponent} from 'app/components/label_component/label.component';
 
 @Component({
@@ -14,3 +15,5 @@ export class LabelSinglePageComponent {
   }
   
 }
+
+bootstrap(LabelSinglePageComponent)

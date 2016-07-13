@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'app/components/label_component/label.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'app/components/label_component/label.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,12 +10,15 @@ System.register(['angular2/core', 'app/components/label_component/label.componen
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, label_component_1;
+    var core_1, browser_1, label_component_1;
     var LabelSinglePageComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (browser_1_1) {
+                browser_1 = browser_1_1;
             },
             function (label_component_1_1) {
                 label_component_1 = label_component_1_1;
@@ -38,6 +41,7 @@ System.register(['angular2/core', 'app/components/label_component/label.componen
                 return LabelSinglePageComponent;
             }());
             exports_1("LabelSinglePageComponent", LabelSinglePageComponent);
+            browser_1.bootstrap(LabelSinglePageComponent);
         }
     }
 });

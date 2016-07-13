@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_components/button_single_page_component/button.single.page.component', 'app/single_page_components/label_single_page_component/label.single.page.component', 'app/single_page_components/input_single_page_component/input.single.page.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, button_single_page_component_1, label_single_page_component_1, input_single_page_component_1;
+    var core_1, browser_1;
     var Main;
     return {
         setters:[
@@ -19,15 +19,6 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_
             },
             function (browser_1_1) {
                 browser_1 = browser_1_1;
-            },
-            function (button_single_page_component_1_1) {
-                button_single_page_component_1 = button_single_page_component_1_1;
-            },
-            function (label_single_page_component_1_1) {
-                label_single_page_component_1 = label_single_page_component_1_1;
-            },
-            function (input_single_page_component_1_1) {
-                input_single_page_component_1 = input_single_page_component_1_1;
             }],
         execute: function() {
             Main = (function () {
@@ -36,8 +27,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/single_page_
                 Main = __decorate([
                     core_1.Component({
                         selector: 'Main',
-                        template: "\n        <div class=\"col-md-12\">\n          <h2>BUTTON</h2>\n        </div>\n        <ButtonSinglePageComponent></ButtonSinglePageComponent>\n        <div class=\"col-md-12\">\n          <h2>LABEL</h2>\n        </div>\n        <LabelSinglePageComponent></LabelSinglePageComponent>\n        <div class=\"col-md-12\">\n          <h2>INPUT</h2>\n        </div>\n        <InputSinglePageComponent></InputSinglePageComponent>\n  ",
-                        directives: [button_single_page_component_1.ButtonSinglePageComponent, label_single_page_component_1.LabelSinglePageComponent, input_single_page_component_1.InputSinglePageComponent]
+                        template: "\n        <div class=\"col-md-12\">\n          <h2>Angular 2 - SB Admin - Bootstrap Admin Template</h2>\n        </div>     \n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], Main);

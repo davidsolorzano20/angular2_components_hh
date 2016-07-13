@@ -1,4 +1,5 @@
 import {Component} from 'angular2/core';
+import {bootstrap} from 'angular2/platform/browser'
 import {InputComponent} from 'app/components/input_component/input.component';
 
 @Component({
@@ -10,3 +11,5 @@ import {InputComponent} from 'app/components/input_component/input.component';
 export class InputSinglePageComponent {
 	
 }
+
+bootstrap(InputSinglePageComponent)
