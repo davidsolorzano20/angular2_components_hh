@@ -27,6 +27,7 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.id = "";
                     this.actionKeyPress = new core_1.EventEmitter();
                     this.actionKeyUp = new core_1.EventEmitter();
+                    this.actionKeyDown = new core_1.EventEmitter();
                 }
                 InputComponent.prototype.doKeyPress = function ($event, value) {
                     this.value = value;
@@ -35,6 +36,10 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                 InputComponent.prototype.doKeyUp = function ($event, value) {
                     this.value = value;
                     this.actionKeyUp.emit({ sender: this });
+                };
+                InputComponent.prototype.doKeyDown = function ($event, value) {
+                    this.value = value;
+                    this.actionKeyDown.emit({ sender: this });
                 };
                 __decorate([
                     core_1.Input('inputType'), 
@@ -64,10 +69,14 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Output(), 
                     __metadata('design:type', Object)
                 ], InputComponent.prototype, "actionKeyUp", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], InputComponent.prototype, "actionKeyDown", void 0);
                 InputComponent = __decorate([
                     core_1.Component({
                         selector: 'InputComponent',
-                        template: "<input #input type=\"{{inputType}}\" class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" (keypress)=\"doKeyPress($event, input.value)\" (keyup)=\"doKeyUp($event, input.value)\"/>"
+                        template: "<input #input type=\"{{inputType}}\" class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" (keypress)=\"doKeyPress($event, input.value)\" (keyup)=\"doKeyUp($event, input.value)\" (keydown)=\"doKeyDown($event, input.value)\"/>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], InputComponent);

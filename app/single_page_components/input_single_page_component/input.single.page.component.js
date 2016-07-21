@@ -1,4 +1,4 @@
-System.register(['angular2/core', 'angular2/platform/browser', 'app/components/input_component/input.component', 'app/custom_components/input_event_keypress/input.event.keypress.component', 'app/custom_components/input_event_keyup/input.event.keyup.component'], function(exports_1, context_1) {
+System.register(['angular2/core', 'angular2/platform/browser', 'app/components/input_component/input.component', 'app/custom_components/input_event_keypress/input.event.keypress.component', 'app/custom_components/input_event_keyup/input.event.keyup.component', 'app/custom_components/input_event_keydown/input.event.keydown.component'], function(exports_1, context_1) {
     "use strict";
     var __moduleName = context_1 && context_1.id;
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -10,7 +10,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/i
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, browser_1, input_component_1, input_event_keypress_component_1, input_event_keyup_component_1;
+    var core_1, browser_1, input_component_1, input_event_keypress_component_1, input_event_keyup_component_1, input_event_keydown_component_1;
     var InputSinglePageComponent;
     return {
         setters:[
@@ -28,6 +28,9 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/i
             },
             function (input_event_keyup_component_1_1) {
                 input_event_keyup_component_1 = input_event_keyup_component_1_1;
+            },
+            function (input_event_keydown_component_1_1) {
+                input_event_keydown_component_1 = input_event_keydown_component_1_1;
             }],
         execute: function() {
             InputSinglePageComponent = (function () {
@@ -37,7 +40,7 @@ System.register(['angular2/core', 'angular2/platform/browser', 'app/components/i
                     core_1.Component({
                         selector: 'InputSinglePageComponent',
                         templateUrl: 'app/views/input.html',
-                        directives: [input_component_1.InputComponent, input_event_keypress_component_1.InputEventKeyPressComponent, input_event_keyup_component_1.InputEventKeyUpComponent]
+                        directives: [input_component_1.InputComponent, input_event_keypress_component_1.InputEventKeyPressComponent, input_event_keyup_component_1.InputEventKeyUpComponent, input_event_keydown_component_1.InputEventKeyDownComponent]
                     }), 
                     __metadata('design:paramtypes', [])
                 ], InputSinglePageComponent);

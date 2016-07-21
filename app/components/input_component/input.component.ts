@@ -2,7 +2,7 @@ import {Component, Input, Output, EventEmitter} from 'angular2/core';
 
 @Component({
 	selector: 'InputComponent',
-	template: `<input #input type="{{inputType}}" class="{{className}}" id="{{id}}" name="{{name}}" (keypress)="doKeyPress($event, input.value)" (keyup)="doKeyUp($event, input.value)"/>`
+	template: `<input #input type="{{inputType}}" class="{{className}}" id="{{id}}" name="{{name}}" (keypress)="doKeyPress($event, input.value)" (keyup)="doKeyUp($event, input.value)" (keydown)="doKeyDown($event, input.value)"/>`
 })
 
 export class InputComponent {
@@ -15,6 +15,7 @@ export class InputComponent {
 
 	@Output() public actionKeyPress = new EventEmitter();
 	@Output() public actionKeyUp = new EventEmitter();
+	@Output() public actionKeyDown = new EventEmitter();
 
 	public doKeyPress($event, value): void {
 		this.value = value;
@@ -24,6 +25,11 @@ export class InputComponent {
 	public doKeyUp($event, value): void {
 		this.value = value;
 		this.actionKeyUp.emit({sender: this});
+	}
+
+	public doKeyDown($event, value): void {
+		this.value = value;
+		this.actionKeyDown.emit({sender: this});
 	}
 	
 }
