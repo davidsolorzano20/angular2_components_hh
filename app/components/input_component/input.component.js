@@ -24,7 +24,13 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     this.className = "";
                     this.value = "";
                     this.name = "";
+                    this.id = "";
+                    this.actionKeyPress = new core_1.EventEmitter();
                 }
+                InputComponent.prototype.doKeyPress = function ($event, value) {
+                    this.value = value;
+                    this.actionKeyPress.emit({ sender: this });
+                };
                 __decorate([
                     core_1.Input('inputType'), 
                     __metadata('design:type', String)
@@ -41,10 +47,18 @@ System.register(['angular2/core'], function(exports_1, context_1) {
                     core_1.Input('name'), 
                     __metadata('design:type', String)
                 ], InputComponent.prototype, "name", void 0);
+                __decorate([
+                    core_1.Input('id'), 
+                    __metadata('design:type', String)
+                ], InputComponent.prototype, "id", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], InputComponent.prototype, "actionKeyPress", void 0);
                 InputComponent = __decorate([
                     core_1.Component({
                         selector: 'InputComponent',
-                        template: "<input type=\"{{inputType}}\" class=\"{{className}}\" value=\"{{value}}\" name=\"{{name}}\"/>"
+                        template: "<input #input type=\"{{inputType}}\" class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" (keypress)=\"doKeyPress($event, input.value)\"/>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], InputComponent);
