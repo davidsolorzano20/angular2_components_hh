@@ -20,11 +20,31 @@ System.register(["angular2/core"], function(exports_1, context_1) {
         execute: function() {
             TextAreaComponent = (function () {
                 function TextAreaComponent() {
+                    this.className = "";
+                    this.id = "";
+                    this.name = "";
+                    this.value = "";
                 }
+                __decorate([
+                    core_1.Input('className'), 
+                    __metadata('design:type', String)
+                ], TextAreaComponent.prototype, "className", void 0);
+                __decorate([
+                    core_1.Input('id'), 
+                    __metadata('design:type', String)
+                ], TextAreaComponent.prototype, "id", void 0);
+                __decorate([
+                    core_1.Input('name'), 
+                    __metadata('design:type', String)
+                ], TextAreaComponent.prototype, "name", void 0);
+                __decorate([
+                    core_1.Input('value'), 
+                    __metadata('design:type', String)
+                ], TextAreaComponent.prototype, "value", void 0);
                 TextAreaComponent = __decorate([
                     core_1.Component({
                         selector: 'TextAreaComponent',
-                        template: '<textarea></textarea>'
+                        template: "<textarea class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\"></textarea>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TextAreaComponent);
