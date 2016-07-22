@@ -24,6 +24,7 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     this.id = "";
                     this.name = "";
                     this.value = "";
+                    this.placeholder = "";
                 }
                 __decorate([
                     core_1.Input('className'), 
@@ -41,10 +42,14 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     core_1.Input('value'), 
                     __metadata('design:type', String)
                 ], TextAreaComponent.prototype, "value", void 0);
+                __decorate([
+                    core_1.Input('placeholder'), 
+                    __metadata('design:type', String)
+                ], TextAreaComponent.prototype, "placeholder", void 0);
                 TextAreaComponent = __decorate([
                     core_1.Component({
                         selector: 'TextAreaComponent',
-                        template: "<textarea class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\"></textarea>"
+                        template: "<textarea class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\" placeholder=\"{{placeholder}}\"></textarea>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TextAreaComponent);
