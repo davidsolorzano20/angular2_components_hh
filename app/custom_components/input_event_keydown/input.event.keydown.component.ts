@@ -13,6 +13,7 @@ import {InputComponent} from 'app/components/input_component/input.component';
 export class InputEventKeyDownComponent{
 
 	characters: string = "";
+	
 	public doActionKeyDown($event): void {
 		this.characters = $event.sender.value;
 	}	
