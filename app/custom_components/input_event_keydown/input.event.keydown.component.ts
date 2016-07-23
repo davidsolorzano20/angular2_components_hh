@@ -15,6 +15,6 @@ export class InputEventKeyDownComponent{
 	characters: string = "";
 	
 	public doActionKeyDown($event): void {
-		this.characters = $event.sender.value;
+		this.characters = $event.sende.value;
 	}	
 }

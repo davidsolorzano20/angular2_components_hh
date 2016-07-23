@@ -25,7 +25,12 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     this.name = "";
                     this.value = "";
                     this.placeholder = "";
+                    this.actionKeyDown = new core_1.EventEmitter();
                 }
+                TextAreaComponent.prototype.doKeyDown = function ($event, value) {
+                    this.value = value;
+                    this.actionKeyDown.emit({ sender: this });
+                };
                 __decorate([
                     core_1.Input('className'), 
                     __metadata('design:type', String)
@@ -46,10 +51,14 @@ System.register(["angular2/core"], function(exports_1, context_1) {
                     core_1.Input('placeholder'), 
                     __metadata('design:type', String)
                 ], TextAreaComponent.prototype, "placeholder", void 0);
+                __decorate([
+                    core_1.Output(), 
+                    __metadata('design:type', Object)
+                ], TextAreaComponent.prototype, "actionKeyDown", void 0);
                 TextAreaComponent = __decorate([
                     core_1.Component({
                         selector: 'TextAreaComponent',
-                        template: "<textarea class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\" placeholder=\"{{placeholder}}\"></textarea>"
+                        template: "<textarea #textarea class=\"{{className}}\" id=\"{{id}}\" name=\"{{name}}\" value=\"{{value}}\" placeholder=\"{{placeholder}}\" (keydown)=\"doKeyDown($event , textarea.value)\"></textarea>"
                     }), 
                     __metadata('design:paramtypes', [])
                 ], TextAreaComponent);

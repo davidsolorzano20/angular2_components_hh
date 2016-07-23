@@ -26,7 +26,7 @@ System.register(['angular2/core', 'app/components/input_component/input.componen
                     this.characters = "";
                 }
                 InputEventKeyDownComponent.prototype.doActionKeyDown = function ($event) {
-                    this.characters = $event.sender.value;
+                    this.characters = $event.sende.value;
                 };
                 InputEventKeyDownComponent = __decorate([
                     core_1.Component({

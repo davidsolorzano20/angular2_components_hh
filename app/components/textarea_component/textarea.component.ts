@@ -1,8 +1,8 @@
-import {Component, Input} from "angular2/core";
+import {Component, Input, Output, EventEmitter} from "angular2/core";
 
 @Component({
 	selector: 'TextAreaComponent',
-	template: `<textarea class="{{className}}" id="{{id}}" name="{{name}}" value="{{value}}" placeholder="{{placeholder}}"></textarea>`
+	template: `<textarea #textarea class="{{className}}" id="{{id}}" name="{{name}}" value="{{value}}" placeholder="{{placeholder}}" (keydown)="doKeyDown($event , textarea.value)"></textarea>`
 })
 
 export class TextAreaComponent {
@@ -13,5 +13,11 @@ export class TextAreaComponent {
 	@Input('value') value: string = "";
 	@Input('placeholder') placeholder: string = "";
 
+	@Output() public actionKeyDown = new EventEmitter();
+
+	public doKeyDown($event,value): void {
+		this.value = value;
+		this.actionKeyDown.emit({sender: this});
+	}
 
 }
